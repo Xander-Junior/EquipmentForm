@@ -1,0 +1,12 @@
+{
+  "fields": {
+    "rawText": "OTUKO JOHN TEYE\nSUPPLY CHAIN MANAGER\notuko.teye@tullowoil.com",
+    "lines": [
+      "OTUKO JOHN TEYE",
+      "SUPPLY CHAIN MANAGER",
+      "otuko.teye@tullowoil.com"
+    ],
+    "email": "otuko.teye@tullowoil.com"
+  },
+  "confidence": 0.86
+}

@@ -1,0 +1,45 @@
+version: 2
+received:
+  title: "EQUIPMENT RECEIVED FORM"
+  party:
+    requestedBy: "Requested By"
+    preparedBy: "Prepared By"
+    receivedBy: "Received By"
+  table:
+    leftHeader: "Equipment Make / Model"
+    rightHeader: "Equipment Serial / Details"
+  workflow:
+    dateReceived: "Date Received"
+    location: "Location"
+returned:
+  title: "EQUIPMENT RETURNED FORM"
+  party:
+    returnedBy: "Returned By"
+    preparedBy: "Prepared By"
+    receivedBy: "Received By"
+  table:
+    leftHeader: "Equipment Make / Model"
+    rightHeader: "Equipment Serial / Details"
+  workflow:
+    dateReturned: "Date Returned"
+    dataHandling: "Data Handling Confirmed"
+    location: "Location"
+replaced:
+  title: "EQUIPMENT REPLACED FORM"
+  newLabel: "NEW DEVICE"
+  oldLabel: "OLD DEVICE"
+  photos:
+    newLabel: "NEW DEVICE PHOTO"
+    oldLabel: "OLD DEVICE PHOTO"
+  party:
+    requestedBy: "Requested By"
+    preparedBy: "Prepared By"
+    receivedBy: "Received By"
+  table:
+    leftHeader: "Equipment Make / Model"
+    rightHeader: "Equipment Serial / Details"
+  workflow:
+    newDate: "New Device Date Received"
+    oldDate: "Old Device Date Returned"
+    dataHandling: "Data Handling Confirmed"
+    location: "Location"

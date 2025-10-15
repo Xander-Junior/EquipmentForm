@@ -1,0 +1,4 @@
+/pdf_templates/**           @ui-visual-validator
+/lib/ocr/**                 @test-automator @code-reviewer
+/docs/prd.md                @architect-review
+/adrs/**                    @architect-review

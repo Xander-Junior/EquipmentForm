@@ -1,0 +1,46 @@
+[
+  {
+    "image": "assets/samples/ocr/eqpt_details/IMG_1577.jpg",
+    "fields": {
+      "assetTag": "AT-001",
+      "serviceTag": "SV-001",
+      "serial": "SR-001",
+      "name": "Jane Doe",
+      "department": "Engineering",
+      "email": "jane.doe@tullowoil.com"
+    }
+  },
+  {
+    "image": "assets/samples/ocr/eqpt_details/IMG_1578.jpg",
+    "fields": {
+      "assetTag": "AT-002",
+      "serviceTag": "SV-002",
+      "serial": "SR-002",
+      "name": "John Smith",
+      "department": "Operations",
+      "email": "john.smith@tullowoil.com"
+    }
+  },
+  {
+    "image": "assets/samples/ocr/eqpt_details/IMG_2009.jpg",
+    "fields": {
+      "assetTag": "AT-003",
+      "serviceTag": "SV-003",
+      "serial": "SR-003",
+      "name": "Maria Lopez",
+      "department": "Finance",
+      "email": "maria.lopez@tullowoil.com"
+    }
+  },
+  {
+    "image": "assets/samples/ocr/eqpt_details/IMG_2010.jpg",
+    "fields": {
+      "assetTag": "AT-004",
+      "serviceTag": "SV-004",
+      "serial": "SR-004",
+      "name": "Kwame Mensah",
+      "department": "IT",
+      "email": "kwame.mensah@tullowoil.com"
+    }
+  }
+]

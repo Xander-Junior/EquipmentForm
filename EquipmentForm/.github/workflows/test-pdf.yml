@@ -1,0 +1,21 @@
+name: PDF Tests
+on:
+  pull_request:
+    paths:
+      - "lib/**"
+      - "test/**"
+      - ".github/workflows/test-pdf.yml"
+permissions:
+  contents: read
+jobs:
+  pdf-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Flutter pub get
+        run: flutter pub get
+      - name: Run PDF & golden verification tests
+        run: flutter test test/goldens/pdf

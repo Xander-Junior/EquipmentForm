@@ -1,0 +1,12 @@
+{
+  "runDate": "2025-10-06T01:04:31.934625",
+  "dataset": "assets/samples/ocr/eqpt_details/",
+  "engineId": "stub",
+  "engineVersion": "v1.0.0",
+  "device": "macos",
+  "osVersion": "Version 26.1 (Build 25B5042k)",
+  "latency": {
+    "medianMs": 481,
+    "p95Ms": 485
+  }
+}
