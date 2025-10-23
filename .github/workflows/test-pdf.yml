@@ -1,4 +1,3 @@
-cat > .github/workflows/test-pdf.yml <<'YAML'
 name: PDF Tests
 on:
   pull_request:
@@ -20,5 +19,3 @@ jobs:
         run: flutter pub get
       - name: Run PDF & golden verification tests
         run: flutter test test/goldens/pdf
-YAML
-

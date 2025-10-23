@@ -1,4 +1,3 @@
-cat > .github/workflows/update-goldens.yml <<'YAML'
 name: Update PDF Goldens
 on:
   workflow_dispatch:
@@ -41,5 +40,4 @@ jobs:
           else
             echo "No golden changes."
           fi
-YAML
 
