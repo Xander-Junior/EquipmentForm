@@ -229,14 +229,39 @@ class DeviceStickerWizard {
 
     final modelRaw = sanitized['makeModel'];
     if (modelRaw != null && modelRaw.trim().isNotEmpty) {
-      final normalized = normalizeDellLatitudeModel(modelRaw)?.trim();
-      sanitized['makeModel'] = (normalized == null || normalized.isEmpty)
-          ? modelRaw.trim()
-          : normalized;
+      final trimmed = modelRaw.trim();
+      final normalized = normalizeDellLatitudeModel(trimmed)?.trim();
+      if (normalized == null || normalized.isEmpty) {
+        sanitized['makeModel'] = _formatModelDisplay(trimmed);
+      } else {
+        final lower = trimmed.toLowerCase();
+        sanitized['makeModel'] = lower.contains('latitude')
+            ? 'Dell Latitude ${normalized.toUpperCase()}'
+            : _formatModelDisplay(trimmed);
+      }
     }
 
     return sanitized;
   }
+}
+
+String _formatModelDisplay(String input) {
+  return input.split(' ').map((word) {
+    if (word.isEmpty) return word;
+    final upper = word.toUpperCase();
+    if (['HP', 'ASUS', 'MSI', 'USB', 'SSD', 'HDD', 'RAM', 'CPU', 'GPU']
+        .contains(upper)) {
+      return upper;
+    }
+    final lower = word.toLowerCase();
+    if (lower == 'dell') return 'Dell';
+    if (lower == 'optiplex') return 'OptiPlex';
+    if (lower == 'latitude') return 'Latitude';
+    if (lower == 'thinkpad') return 'ThinkPad';
+    if (lower == 'macbook') return 'MacBook';
+    if (lower == 'probook') return 'ProBook';
+    return word[0].toUpperCase() + word.substring(1).toLowerCase();
+  }).join(' ');
 }
 
 class _DeviceStickerWizardDialog extends StatefulWidget {

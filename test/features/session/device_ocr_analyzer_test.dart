@@ -340,8 +340,8 @@ void main() {
             equals('TL-123456'));
         expect(analysis.primarySuggestionFor('serviceTag')?.value,
             equals('ABCD123'));
-        expect(
-            analysis.primarySuggestionFor('makeModel')?.value, equals('5440'));
+        expect(analysis.primarySuggestionFor('makeModel')?.value,
+            equals('Dell Latitude 5440'));
         expect(analysis.primarySuggestionFor('warrantyExpiry')?.value,
             equals('12/06/2026'));
       });
